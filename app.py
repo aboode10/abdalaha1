@@ -2,7 +2,7 @@ import requests
 from flask import *
 from user_agent import *
 app = Flask(__name__)
-app.config['JSON_AS_ACSII'] = false
+app.config['JSON_AS_ACSII'] = False
 @app.route("/")
 def q():
  return jsonify(Telegram="@JJJJzJJJ",Channel="@LLYYLLL")
@@ -40,6 +40,6 @@ def f():
  if '"user":true' in req:
    return jsonify(Telegram="@JJJJzJJJ",Email=Email,Check="Aailable✅")
  else:
-  return jsonify(Telegram="@JJJJzJJJ",Email=Email,Checker="UnAailable❌")
+  return jsonify(Telegram="@JJJJzJJJ",Email=Email,Checker="False")
 if __name__=="__main__":
  app.run()
