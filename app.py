@@ -2,7 +2,7 @@ import requests
 from flask import *
 from user_agent import *
 app = Flask(__name__)
-app.confi["JSON_AS_ACSII"]=False
+app.config["JSON_AS_ACSII"]=False
 @app.route("/")
 def q():
  return jsonify(Telegram="@JJJJzJJJ",Channel="@LLYYLLL")
