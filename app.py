@@ -7,7 +7,7 @@ app.config["JSON_AS_ACSII"] = False
 @app.route("/")
 def q():
  return jsonify(Telegram="@JJJJzJJJ",Checker="False",Email=" ")
-@app.route("/api/check/instagram/JJJJzJJJ/")
+@app.route("/check/insta/JJJJzJJJ/")
 def f():
  Email = request.args.get("Email")
  url = "https://www.instagram.com/accounts/login/ajax/"
