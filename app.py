@@ -40,4 +40,5 @@ def f():
    return jsonify(Telegram="@JJJJzJJJ",Email=Email,Check="Aailable✅")
  else:
   return jsonify(Telegram="@JJJJzJJJ",Email=Email,Checker="UnAailable❌")
-app.run()
+if __name__=="__main__":
+ app.run()
